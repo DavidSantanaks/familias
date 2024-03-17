@@ -1,9 +1,8 @@
 package com.david.proj.simples.crud.modells;
 
-import com.david.proj.simples.crud.Records.FamilasDto;
+import com.david.proj.simples.crud.Records.FamilasCadastroDto;
 
 
-import com.david.proj.simples.crud.Repository.FamiliaRepository;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -32,7 +31,7 @@ public class Familias {
     private int quantidadeMembros;
 
     // Contructor FamilasDto dados
-    public Familias(FamilasDto dados) {
+    public Familias(FamilasCadastroDto dados) {
         this.id = dados.id();
         this.nome = dados.nome();
         this.quantidadeMembros = dados.quantidadeMembros();
